@@ -1,0 +1,25 @@
+/* Add custom styling as needed */
+.colored-div {
+    background-color: #19488A;
+    /* Add additional styles as needed */
+  }
+  
+.picture {
+    padding: 25px;
+  }
+  
+h1 {
+    font-family: Titillium;
+    font-size: 24px; /* Adjust the font size for smaller screens */
+    color: rgb(240, 248, 255);
+
+  }
+.evidence{
+  font-size: 35px;
+  color: #ff790c;
+  font-weight: bold;
+}
+  
+.search{
+    padding: 55px 0 55px 500px;
+}

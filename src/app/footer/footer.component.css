@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #fff;
+    background-color: #19488A;
+}
+
+footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer .container p{
+    color: #fff;
+}
+
+footer .container .sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+
+}
+
+footer .container li{
+    list-style: none;
+}
+
+footer .container li a{
+    width: 36px;
+    height: 36px;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .container li a i{
+    color: #fff;
+    font-size: 20px;
+} 
+
+footer .container .quicklinks{
+    position: relative;
+}
+
+footer .container .quicklinks ul li{
+    list-style: none;
+}
+
+footer .container .quicklinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .container .contact .info li{
+    display: flex; /* Use flexbox for better layout control */
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+footer .container .contact .info li span{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px; /* Adjust the spacing between the icon and text */
+}
+
+footer .container .contact .info li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #fff;
+    padding: 20px 100px 30px ;
+    text-align: center;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+body{
+    overflow-x: hidden;
+}
