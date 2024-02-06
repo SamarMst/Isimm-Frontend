@@ -9,7 +9,6 @@ import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './footer/footer.component';
 import { ContenupComponent } from './contenup/contenup.component';
 import { ClubComponent } from './club/club.component';
-import { ScrollableNavbarComponent } from './scrollable-navbar/scrollable-navbar.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { FoyersComponent } from './foyers/foyers.component';
 import { PrincipaleComponent } from './principale/principale.component';
@@ -23,7 +22,6 @@ import { PrincipaleComponent } from './principale/principale.component';
     FooterComponent,
     ContenupComponent,
     ClubComponent,
-    ScrollableNavbarComponent,
     FormulaireComponent,
     FoyersComponent,
     PrincipaleComponent
