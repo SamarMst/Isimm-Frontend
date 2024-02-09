@@ -12,6 +12,9 @@ import { ClubComponent } from './club/club.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { FoyersComponent } from './foyers/foyers.component';
 import { PrincipaleComponent } from './principale/principale.component';
+import { LoginComponent } from './login/login.component';
+import { RestauComponent } from './restau/restau.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,12 +27,15 @@ import { PrincipaleComponent } from './principale/principale.component';
     ClubComponent,
     FormulaireComponent,
     FoyersComponent,
-    PrincipaleComponent
+    PrincipaleComponent,
+    LoginComponent,
+    RestauComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule
+    IonicModule,
+    HttpClientModule
   
   ],
   providers: [],

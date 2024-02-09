@@ -2,6 +2,7 @@
 .colored-div {
     background-color: #19488A;
     /* Add additional styles as needed */
+    height: 150px;
   }
   
 .picture {
@@ -22,4 +23,9 @@ h1 {
   
 .search{
     padding: 55px 0 55px 500px;
+}
+.pad{
+  padding: 10px;
+  margin-bottom: 60px;
+  margin-left: 5px;
 }
