@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TgmenuComponent } from './tgmenu/tgmenu.component';
-import { MatIconModule } from '@angular/material/icon';
 import { IonicModule } from '@ionic/angular';
 import { FooterComponent } from './footer/footer.component';
 import { ContenupComponent } from './contenup/contenup.component';
@@ -15,7 +14,6 @@ import { PrincipaleComponent } from './principale/principale.component';
 import { LoginComponent } from './login/login.component';
 import { RestauComponent } from './restau/restau.component';
 import { HttpClientModule } from '@angular/common/http';
-
 
 @NgModule({
   declarations: [
@@ -29,16 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     FoyersComponent,
     PrincipaleComponent,
     LoginComponent,
-    RestauComponent
+    RestauComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    IonicModule,
-    HttpClientModule
-  
-  ],
+  imports: [BrowserModule, AppRoutingModule, IonicModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
