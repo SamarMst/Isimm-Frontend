@@ -1,0 +1,81 @@
+.deco {
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    width: 1600px;
+    height: 500px;
+  }
+ 
+  
+  .text {
+    color: #eeeeee;
+    font-weight: bold;
+    border: 3px solid #cccccc;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+   .pad {
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    border-radius: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .card{
+    width:350px;
+    height:200px;
+    margin-top: 50px;
+    margin-left: 160px;
+    margin-right: -80px;
+    background-color: #e3f2fd;
+    color:white;
+   
+ .img-fluid{
+  height: 180px;
+  width: 120px;
+  margin-left: 2px;
+  margin-top: 10px;
+ 
+ }
+}
+.rf{
+    width: 280px;
+    height: 300;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.rf1{
+    width: 280px;
+    height: 20;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.rf2{
+    width: 280px;
+    height: 30;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 15px;
+  }
+}

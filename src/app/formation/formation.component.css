@@ -1,0 +1,52 @@
+h1{
+    margin-top: 15px;
+    margin-left: 550px;
+}
+p{
+    margin-left: 600px;
+}
+
+img{
+    width: 1550px;
+    height: 500px;
+}
+.card{
+    width:500px;
+    height:300px;
+    margin-top: 15px;
+    margin-left: 300px;
+    background-color: #19488A;
+    color:white;
+}
+h6{
+    color:white;
+    font-size: 1.1rem;
+}
+.containers{
+    background-color: #19488A;
+
+    padding: 40px;
+    color:white;
+    font-size: 1.8rem;
+}
+.col{
+    border-right: 2px solid white; 
+}
+.cha{
+    background-color:#F9EFDB;
+    height: 450px;
+}
+.desc{
+   margin-left: 350px;
+    padding-top: 25px;
+  
+}
+#ing{
+    width: 283px;
+    height: 400px;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.fr{
+    background-color: #F9EFDB;
+}

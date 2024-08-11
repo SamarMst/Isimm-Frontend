@@ -1,12 +1,30 @@
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-   <div class="mb-3 row">
-    <label for="inputPassword" class="form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword">
+<!-- login.component.html -->
+<div class="gg">
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+                <h1 style="color: #ff790c; font-weight: bolder; font-size: 40px;">Sign In</h1>
+                <input class="form-control" type="email" formControlName="email" placeholder="Email" required>
+                <input class="form-control" type="password" formControlName="password" placeholder="Password" required>
+                <a href="#" style="color: #ff790c; font-size: 15px;"><u>Forget Your Password?</u></a>
+                <button type="submit" [disabled]="loginForm.invalid">Sign In</button>
+            </form>
+        </div>
+        
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all site features</p>
+                    <button type="submit" class="hidden">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome!</h1>
+                    <p>Register with your personal details to use all site features</p>
+                    <button class="hidden" (click)="navigateToSignUp()" >Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
-  <button type="button" class="btn btn-primary">Se connecter</button>
-  <br><br>
+  

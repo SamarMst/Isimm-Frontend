@@ -1,10 +1,15 @@
-<nav [ngClass]="{ 'open': isNavOpen }">
-  <div class="nav-content" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp()" (mouseleave)="onMouseLeave()">
-    <div class="toggle-btn" (click)="toggleNav()">
-      <i [class]="isAddIcon ? 'fa-solid fa-plus' : 'fa-solid fa-x'"></i>
+<nav>
+  <div class="nav-content">
+    <div class="toggle-btn" *ngIf="isComponentVisible" (click)="navigateTo('student')">
+      <i class="fa-solid fa-user"></i>
     </div>
-    <span *ngFor="let icon of icons; let i = index" [style.--i]="i + 1">
-      <a href="#"><i [class]="icon"></i></a>
-    </span>
+    <br>
+    <div class="toggle-btn" *ngIf="isComponentVisible" (click)="navigateTo('prof')">
+      <i class="fa-solid fa-user-tie"></i>
+    </div>
+    <br>
+    <div class="toggle-btn" *ngIf="isComponentVisible" (click)="navigateTo('admin')">
+      <i class="fa-solid fa-users"></i>
+    </div>
   </div>
 </nav>

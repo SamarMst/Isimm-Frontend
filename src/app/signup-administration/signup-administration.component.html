@@ -1,0 +1,40 @@
+<div class="gg">
+    <div class="container" id="container">
+        <div class="form-container">
+            <form name="form"  [formGroup]="registerForm" (ngSubmit)="submitForm()">
+                <h1 id="ss">Create Account</h1>
+                <!-- Name -->
+                <input type="text" placeholder="Name" class="form-control"  name="nom_admin"  id="nom_admin" required formControlName="nom_admin" >
+                <!-- CIN -->
+                <input type="text" class="form-control" placeholder="CIN" name="cin_admin" minlength="8" required formControlName="cin_admin">
+                <!-- Email -->
+                <input type="email" placeholder="Email" class="form-control" name="email_admin" required minlength="5" maxlength="20" formControlName="email_admin" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <!-- Numero de telephone -->
+                <input type="text" placeholder="Numero de telephone"  name="telephone_admin" class="form-control" formControlName="telephone_admin" required>
+                <!-- Titre -->
+                <input type="text" placeholder="Titre" class="form-control"  name="titre_admin"  id="titre_admin" required formControlName="titre_admin" >
+                <!-- Password -->
+                <input type="password" placeholder="Password" class="form-control" name="password" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"  formControlName="password">
+                <!-- Confirm Password -->
+                <input type="password" placeholder="Confirm Password"  class="form-control" name="confirmPassword" formControlName="confirmPassword"  required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                
+
+                <div style="color: red;" class="row">
+                    <div class="col-md-8"><label>Your password must start with an uppercase and contain at least one lowercase, symbol, and number</label></div>
+                </div>
+
+                <button type="submit" [disabled]="registerForm.invalid" >Sign Up</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1 class="welcome">Welcome Back!</h1>
+                    <p>Enter your personal details to use all site features</p>
+                    <button class="hidden" id="login" (click)="navigateToSignIn()">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

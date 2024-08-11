@@ -1,37 +1,33 @@
 // tgmenu.component.ts
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tgmenu',
   templateUrl: './tgmenu.component.html',
-  styleUrls: ['./tgmenu.component.css']
+  styleUrls: ['./tgmenu.component.css'],
 })
 export class TgmenuComponent {
-  icons = ['fa-solid fa-user','fa-solid fa-user-tie','fa-solid fa-users']; //icons names
-  isNavOpen = false;
-  isAddIcon = true;
+  constructor(private router: Router) {}
+  isComponentVisible: boolean = true;
 
-  toggleNav() {
-    this.isNavOpen = !this.isNavOpen;
-    this.isAddIcon = !this.isAddIcon;
-  }
+  navigateTo(page: string) {
+    // Perform navigation based on the 'page' parameter
+    this.isComponentVisible = !this.isComponentVisible;
+    switch (page) {
+      case 'student':
+        this.router.navigate(['/login']);
+        break;
+      case 'prof':
+        this.router.navigate(['/login-prof']);
+        break;
+      case 'admin':
+        this.router.navigate(['/login-admin']);
+        break;
 
-  onDrag(event: MouseEvent) {
-    // Handle the drag logic if needed
-  }
-
-  @HostListener('document:mouseup')
-  onMouseUp() {
-    // Handle the mouseup logic if needed
-  }
-
-  @HostListener('document:mouseleave')
-  onMouseLeave() {
-    // Handle the mouseleave logic if needed
-  }
-
-  @HostListener('mousedown', ['$event'])
-  onMouseDown(event: MouseEvent) {
-    // Handle the mousedown logic if needed
+      default:
+        // Handle invalid page
+        break;
+    }
   }
 }

@@ -1,0 +1,161 @@
+h1{
+    margin-top: 15px;
+    margin-left: 550px;
+}
+h2{
+
+    margin-left: 440px;
+}
+p{
+    margin-top: 20px;
+    margin-left: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 1550px;
+    height: 400px;
+}
+.col{
+    border-right: 2px solid white;
+    
+}
+.container{
+    background-color: #062a5d;
+    width:900px;
+    height:150px;
+    padding: 40px;
+    color:white;
+    font-size: 1.8rem;
+    margin-top: 20px;
+   
+   
+ 
+}
+#gg{
+    background-color:#e5d8d0;
+    width:900px;
+    height:200px;
+    padding: 40px;
+    color:black;
+    font-size: 1.8rem;
+    margin-top: -5px;
+    margin-left: 420px;
+}
+.card{
+    width:350px;
+    height:600px;
+    margin-top: 50px;
+    margin-left: 180px;
+
+    color:white;
+   
+ 
+}
+.rf{
+    width: 280px;
+    height: 300;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+.ff{
+    background-color:#e5d8d0;
+    margin-top: 20px;
+}
+.rf1{
+    width: 280px;
+    height: 20;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+h1{
+    margin-top: 40px;
+    margin-left: 550px;
+}
+h3{
+    margin-top: 2px;
+    margin-left: 650px;
+}
+p{
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.cha{
+  
+    margin-top: 20px;
+}
+.d-block{
+    width: 1100px;
+    margin-left: 350px;
+}
+#rr{
+    width: 450px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+#rt{
+    margin-left: 140;
+}
+.button {
+    height: 40px;
+    width: 400px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #062a5d;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #062a5d;
+    transition: all 0.5s ease-in-out;
+    margin-left: 600px;
+   
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #062a5d;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  .button-86 {
+    all: unset;
+    width: 160px;
+    height: 30px;
+    font-size: 16px;
+    background: #1D5D9B;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 15px 20px;
+    border-radius: 3px;
+  }
+  
+ 

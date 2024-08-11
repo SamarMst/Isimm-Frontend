@@ -1,6 +1,6 @@
 .pad{
     padding: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     margin-left: 5px;
     background-color: #C5DFF8;
 }
@@ -15,4 +15,17 @@
 }
 .contenitore{
     justify-content: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+  .col-lg-6 {
+    flex: 0 0 100%; /* Make columns full width on medium screens and smaller */
+  }
+  .title{
+    font-size: 35px;
+  }
+  .card-body{
+    justify-content: center;
+  }
 }

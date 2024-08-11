@@ -1,0 +1,20 @@
+.colored-div {
+    background-color: #19488A;
+    /* Add additional styles as needed */
+    height: 100px; /* Adjust height to auto for responsive resizing */
+    padding: 20px; /* Add padding for better spacing */
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .picture {
+    padding: 10px;
+    width: 80px; /* Set a fixed width for the logo */
+  }
+  h1 {
+    font-family: Titillium;
+    font-size: 22px; /* Adjust the font size for smaller screens */
+    color: rgb(240, 248, 255);
+    margin: 0; /* Remove default margin for better spacing */
+    font-weight: bolder;
+  }  

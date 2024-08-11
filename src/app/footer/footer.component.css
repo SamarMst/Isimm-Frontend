@@ -78,15 +78,11 @@ footer .container .contact .info li{
 
 footer .container .contact .info li span{
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     margin-right: 10px; /* Adjust the spacing between the icon and text */
 }
 
-footer .container .contact .info li a{
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-}
+
 
 .copyrightText{
     width: 100%;
@@ -98,4 +94,87 @@ footer .container .contact .info li a{
 }
 body{
     overflow-x: hidden;
+}
+@media screen and (max-width: 576px) {
+    footer {
+        position: relative;
+        width: 100%;
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+        background-color: #19488A;
+    }
+    
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr; /* Use one column for smaller screens */
+        grid-gap: 15px;
+        text-align: center; /* Center align content for smaller screens */
+    }
+    
+    footer .container h2 {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    footer .container p {
+        color: #fff;
+    }
+    
+    footer .container .sci {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    footer .container li {
+        list-style: none;
+        justify-content: center;
+    }
+    
+    footer .container li a {
+        width: 36px;
+        height: 36px;
+        display: inline-flex; /* Use inline-flex for better alignment */
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    footer .container li a i {
+        font-size: 20px;
+    }
+    
+    footer .container .quicklinks ul li {
+        margin-bottom: 10px;
+    }
+    
+    footer .container .quicklinks ul li a {
+        
+        justify-content: center;
+    }
+    
+    footer .container .contact .info li {
+        margin-bottom: 16px;
+    }
+    
+    footer .container .contact .info li span {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+        justify-content: center;
+        font-weight: bolder;
+    }
+    
+    
+    iframe {
+        width: 100%; /* Make iframe responsive */
+    }
+    
+    .copyrightText {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center;
+        color: #333;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
 }

@@ -1,31 +1,83 @@
-/* Add custom styling as needed */
-.colored-div {
-    background-color: #19488A;
-    /* Add additional styles as needed */
-    height: 150px;
-  }
-  
-.picture {
-    padding: 25px;
-  }
-  
-h1 {
-    font-family: Titillium;
-    font-size: 24px; /* Adjust the font size for smaller screens */
-    color: rgb(240, 248, 255);
+/* contenup.css */
 
-  }
-.evidence{
+/* Add custom styling as needed */
+
+.colored-div {
+  background-color: #19488A;
+  /* Add additional styles as needed */
+  height: 120px; /* Adjust height to auto for responsive resizing */
+  padding: 20px; /* Add padding for better spacing */
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.picture {
+  padding: 10px;
+  width: 100px; /* Set a fixed width for the logo */
+}
+
+h1 {
+  font-family: Titillium;
+  font-size: 24px; /* Adjust the font size for smaller screens */
+  color: rgb(240, 248, 255);
+  margin: 0; /* Remove default margin for better spacing */
+  font-weight: bolder;
+}
+
+.evidence {
   font-size: 35px;
   color: #ff790c;
   font-weight: bold;
 }
-  
-.search{
-    padding: 55px 0 55px 500px;
+.search {
+  padding: 55px 0 55px 400px;
 }
-.pad{
+
+.search input {
+  width: 100%; /* Make input fill the available space */
+}
+
+.pad {
   padding: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px; /* Reduce margin for smaller screens */
   margin-left: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .search {
+      padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .colored-div {
+    height: 100px;
+  }
+  .search  input {
+      visibility: hidden;
+  }
+  .search  button {
+    visibility: hidden;
+  }
+  
+  .picture {
+   display: none;
+  }
+  
+  h1 {
+
+      font-size: 16px;
+      
+     
+  }
+
+  .card-title, p {
+      font-size: 14px; /* Adjust font size for card titles and paragraphs */
+  }
+
+  .tileTitle {
+      font-size: 20px; /* Adjust font size for tile titles */
+      text-align: center; /* Center align tile titles */
+  }
 }
